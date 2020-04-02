@@ -35,8 +35,14 @@ class CustomStack {
     }
 }
 
+/*
+
+Time Complexity
+
 push - O(1)
 pop - O(1)
 increment - O(k)
+
+*/
  
 ```
