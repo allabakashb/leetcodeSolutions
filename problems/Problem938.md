@@ -12,15 +12,24 @@ class Solution {
             sum = root.val;
         }
         
-        return sum + rangeSumBST(root.left, L, R) +
-            rangeSumBST(root.right, L, R);
+        if (L < root.val) {
+            
+           sum += rangeSumBST(root.left, L, R);
+        }
+        
+        if (R > root.val) {
+            
+            sum += rangeSumBST(root.right, L, R);
+        }
+        
+        return sum;
     }
 }
 
 /*
 
 Time Complexity - O(N)
-Space Complexity - O(L) - number of levels
+Space Complexity - O(H) - height of the tree
 
 */
 
