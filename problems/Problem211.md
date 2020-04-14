@@ -123,7 +123,7 @@ class WordDictionary {
   addWord - O(N) - N - length of the string
   search - O(N) -  N - length of the string
    
-   Space Complexity - O(N)
+   Space Complexity - O(N*K) - N - number of nodes and K - max length of a string
  
  */
  
